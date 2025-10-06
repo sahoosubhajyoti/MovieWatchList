@@ -31,7 +31,7 @@ function App() {
       if(query) {
         fetchMovies(searchUrl);
       } else {
-        const popularMoviesUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1';
+        const popularMoviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
         fetchMovies(popularMoviesUrl);
      }
   }

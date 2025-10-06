@@ -1,4 +1,4 @@
-// src/Components/MovieCard.jsx
+
 import React from 'react';
 
 const MovieCard = ({ movie, onAddToWatchlist, onRemoveFromWatchlist, isWatchlist }) => {
@@ -6,7 +6,7 @@ const MovieCard = ({ movie, onAddToWatchlist, onRemoveFromWatchlist, isWatchlist
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : "https://via.placeholder.com/500x750";
   
-  // Decide which button to show
+ 
   const renderButton = () => {
     // If onRemoveFromWatchlist function exists, it means we are on the WatchlistPage
     if (onRemoveFromWatchlist) {
